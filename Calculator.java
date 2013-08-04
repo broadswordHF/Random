@@ -12,15 +12,15 @@ public class Calculator {
 	//Choose either addition, multiplication, subtraction, or division.
 	public void chooseType() {	
 		System.out.println("Which you like to 'add', 'multiply', 'subtract', or 'divide'?");
-		String userInput = myScanner.nextLine();
+		String getUserInput = myScanner.nextLine();
 		
-		if(userInput.equalsIgnoreCase("add")) {
+		if( getUserInput.equalsIgnoreCase("add") ||  getUserInput.equalsIgnoreCase("addition")) {
 			addition();
-		} else if (userInput.equalsIgnoreCase("multiply")) {
+		} else if (getUserInput.equalsIgnoreCase("multiply") || getUserInput.equalsIgnoreCase("multiplication")) {
 			multiplication();
-		} else if (userInput.equalsIgnoreCase("subtract")) {
+		} else if (getUserInput.equalsIgnoreCase("subtract") || getUserInput.equalsIgnoreCase("subtraction")) {
 			subtraction();
-		} else if (userInput.equalsIgnoreCase("divide")) {
+		} else if (getUserInput.equalsIgnoreCase("divide") || getUserInput.equalsIgnoreCase("division")) {
 			division();
 		} else {
 			System.out.println("Please enter either 'add', 'multiply', 'subtract', or 'divide'. \n");
