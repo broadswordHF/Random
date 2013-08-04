@@ -1,35 +1,35 @@
 import java.util.Scanner;
 
 public class Calculator {
-	static Scanner onScanner = new Scanner(System.in);
-	static int x, y;
+	private static Scanner onScanner = new Scanner(System.in);
+	private static int x, y;
 	
 	//Makes it easier to get the scanner for the number.
-	public int getScanner() {
+	private int getScanner() {
 		return onScanner.nextInt();		
 	}
 	
 	//Choose either addition, multiplication, subtraction, or division.
-	void chooseType() {	
-		System.out.print("Which you like to add, multiply, subtract, or divide: ");
+	public void chooseType() {	
+		System.out.println("Which you like to 'add', 'multiply', 'subtract', or 'divide'?");
 		String userInput = onScanner.nextLine();
 		
-		if(userInput.toLowerCase() == "add") {
+		if(userInput.equalsIgnoreCase("add")) {
 			addition();
-		} else if (userInput.toLowerCase() == "multiply") {
+		} else if (userInput.equalsIgnoreCase("multiply")) {
 			multiplication();
-		} else if (userInput.toLowerCase() == "subtract") {
+		} else if (userInput.equalsIgnoreCase("subtract")) {
 			subtraction();
-		} else if (userInput.toLowerCase() == "divide") {
+		} else if (userInput.equalsIgnoreCase("divide")) {
 			division();
 		} else {
-			System.out.println("Please enter either add, multiply, subtract, or divide. \n");
+			System.out.println("Please enter either 'add', 'multiply', 'subtract', or 'divide'. \n");
 			chooseType();
 		}
 	}
 	
 	//Handles addition
-	void addition() {
+	public void addition() {
 		System.out.println("Enter the first number: ");
 		x = getScanner();
 		
@@ -40,7 +40,7 @@ public class Calculator {
 	}
 	
 	//Handles subtraction
-	void subtraction() {
+	public void subtraction() {
 		System.out.println("Enter the first number.");
 		x = getScanner();
 		
@@ -51,7 +51,7 @@ public class Calculator {
 	}
 	
 	//Handles multiplication
-	void multiplication() {
+	public void multiplication() {
 		System.out.println("Enter the first number.");
 		x = getScanner();
 		
@@ -62,7 +62,7 @@ public class Calculator {
 	}
 	
 	//Handles division
-	void division() {
+	public void division() {
 		System.out.println("Enter the first number.");
 		x = getScanner();
 		
