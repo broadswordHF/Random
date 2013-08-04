@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Start {
-	private static MakeChange getChange = new MakeChange();
-	private static Calculator getAnswer = new Calculator();
+	private static MakeChange makeChange = new MakeChange();
+	private static Calculator calculator = new Calculator();
 	private static Scanner myScanner = new Scanner(System.in);
 	
 	public static void main(String args[]) {
@@ -10,9 +10,9 @@ public class Start {
 		String answer = myScanner.next();
 		
 		if (answer.equalsIgnoreCase("calc")) {
-			getAnswer.chooseType();
+			calculator.chooseType();
 		} else if (answer.equalsIgnoreCase("coins")) {
-			getChange.changeConverter();
+			makeChange.changeConverter();
 		} else {
 			System.out.println("Retry.");
 		}
