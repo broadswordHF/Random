@@ -12,18 +12,18 @@ public class MakeChange {
 		System.out.println("Do you want this turned into 'dimes', 'nickles', 'quarters', or 'pennies'?");
 		String chooseCoin = myScanner.next();
 		
-		if (chooseCoin.equalsIgnoreCase("dimes") || chooseCoin.equalsIgnoreCase("dime")) {
+		if (chooseCoin.equalsIgnoreCase("dimes") || chooseCoin.equalsIgnoreCase("dime")) 
 			System.out.println(dimeConverter());
-		} else if (chooseCoin.equalsIgnoreCase("nickles") || chooseCoin.equalsIgnoreCase("nickle")) {
+		else if (chooseCoin.equalsIgnoreCase("nickles") || chooseCoin.equalsIgnoreCase("nickle"))
 			System.out.println(nickelConverter());
-		} else if (chooseCoin.equalsIgnoreCase("quarters") || chooseCoin.equalsIgnoreCase("quarter")) {
+		else if (chooseCoin.equalsIgnoreCase("quarters") || chooseCoin.equalsIgnoreCase("quarter"))
 			System.out.println(quarterConverter());
-		} else if (chooseCoin.equalsIgnoreCase("pennies") || chooseCoin.equalsIgnoreCase("penny")) {
+		else if (chooseCoin.equalsIgnoreCase("pennies") || chooseCoin.equalsIgnoreCase("penny"))
 			System.out.println(pennyConverter());
-		} else {
-			System.out.println("Only type one of the listed options");
+		else
+			System.out.println("Only type one of the listed options. \n");
 			changeConverter();
-		}
+		
 	}
 	
 	public int dimeConverter() {

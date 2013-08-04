@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Calculator {
 	private static Scanner myScanner = new Scanner(System.in);
 	private static int x, y;
+	private static int answer;
 	
 	//Makes it easier to get the scanner for the number.
 	private int getIntScanner() {
@@ -14,29 +15,29 @@ public class Calculator {
 		System.out.println("Which you like to 'add', 'multiply', 'subtract', or 'divide'?");
 		String getUserInput = myScanner.nextLine();
 		
-		if( getUserInput.equalsIgnoreCase("add") ||  getUserInput.equalsIgnoreCase("addition")) {
+		if( getUserInput.equalsIgnoreCase("add") ||  getUserInput.equalsIgnoreCase("addition")) 
 			addition();
-		} else if (getUserInput.equalsIgnoreCase("multiply") || getUserInput.equalsIgnoreCase("multiplication")) {
+		else if (getUserInput.equalsIgnoreCase("multiply") || getUserInput.equalsIgnoreCase("multiplication"))
 			multiplication();
-		} else if (getUserInput.equalsIgnoreCase("subtract") || getUserInput.equalsIgnoreCase("subtraction")) {
+		else if (getUserInput.equalsIgnoreCase("subtract") || getUserInput.equalsIgnoreCase("subtraction"))
 			subtraction();
-		} else if (getUserInput.equalsIgnoreCase("divide") || getUserInput.equalsIgnoreCase("division")) {
+		else if (getUserInput.equalsIgnoreCase("divide") || getUserInput.equalsIgnoreCase("division"))
 			division();
-		} else {
+		else
 			System.out.println("Please enter either 'add', 'multiply', 'subtract', or 'divide'. \n");
 			chooseType();
-		}
 	}
 	
 	//Handles addition
 	public void addition() {
-		System.out.println("Enter the first number: ");
+		System.out.println("Enter the first number.");
 		x = getIntScanner();
 		
-		System.out.println("Enter the second number: ");
+		System.out.println("Enter the second number.");
 		y = getIntScanner();
 		
-		System.out.println(x + y);
+		answer = x + y;
+		System.out.println("The answer is " + answer);
 	}
 	
 	//Handles subtraction
@@ -47,7 +48,8 @@ public class Calculator {
 		System.out.println("Enter the second number.");
 		y = getIntScanner();
 		
-		System.out.println(x - y);
+		answer = x - y;
+		System.out.println("The answer is " + answer);
 	}
 	
 	//Handles multiplication
@@ -58,7 +60,8 @@ public class Calculator {
 		System.out.println("Enter the second number.");
 		y = getIntScanner();
 		
-		System.out.println(x * y);
+		answer = x * y;
+		System.out.println("The answer is " + answer);
 	}
 	
 	//Handles division
@@ -69,6 +72,7 @@ public class Calculator {
 		System.out.println("Enter the second number.");
 		y = getIntScanner();
 		
-		System.out.println(x / y);
+		answer = x / y;
+		System.out.println("The answer is " + answer);
 	}
 }
