@@ -11,9 +11,9 @@ public class Start {
 		
 		if (answer.equalsIgnoreCase("calc")) 
 			calculator.chooseType();
-		 else if (answer.equalsIgnoreCase("coins")) 
+		else if (answer.equalsIgnoreCase("coins")) 
 			makeChange.changeConverter();
-		 else 
+		else 
 			System.out.println("Retry.");
 		
 	}
