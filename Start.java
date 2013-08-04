@@ -9,12 +9,12 @@ public class Start {
 		System.out.println("Do you want to use the calculator or convert dollars to different coins? Enter 'calc' for the calculator or 'coins' for the change converter.");
 		String answer = myScanner.next();
 		
-		if (answer.equalsIgnoreCase("calc")) {
+		if (answer.equalsIgnoreCase("calc")) 
 			calculator.chooseType();
-		} else if (answer.equalsIgnoreCase("coins")) {
+		 else if (answer.equalsIgnoreCase("coins")) 
 			makeChange.changeConverter();
-		} else {
+		 else 
 			System.out.println("Retry.");
-		}
+		
 	}
 }
