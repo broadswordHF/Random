@@ -15,7 +15,7 @@ public class Calculator {
 		System.out.println("Which you like to 'add', 'multiply', 'subtract', or 'divide'?");
 		String getUserInput = myScanner.nextLine();
 		
-		if( getUserInput.equalsIgnoreCase("add") ||  getUserInput.equalsIgnoreCase("addition")) 
+		if (getUserInput.equalsIgnoreCase("add") ||  getUserInput.equalsIgnoreCase("addition")) 
 			addition();
 		else if (getUserInput.equalsIgnoreCase("multiply") || getUserInput.equalsIgnoreCase("multiplication"))
 			multiplication();

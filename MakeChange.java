@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class MakeChange {
 	private static Scanner myScanner = new Scanner(System.in);
 	private static int total;
